@@ -1,0 +1,194 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .navbar
+    &-left
+      flex-basis: 50%
+
+@media (min-width: 992px)
+  .navbar
+    &-top
+      &__button
+        &:hover
+          background: $button-color
+          color: $white
+          box-shadow: inset 0 0 0 3px $button-color
+          filter: brightness(85%)
+  .nav
+    &-link
+      &:hover
+        color: $button-color
+        filter: brightness(85%)
+  .button
+    &-outline
+      &:hover
+        background: $yellow
+        color: $white
+        box-shadow: inset 0 0 0 3px $yellow
+        filter: brightness(85%)
+    &-primary
+      &:hover
+        background: $yellow
+        color: $white
+        box-shadow: inset 0 0 0 3px $yellow
+        border: 2px solid $yellow
+        filter: brightness(85%)
+
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .navbar
+    &-left
+      justify-content: space-between
+      flex-basis: 70%
+    &-top
+      &__button
+        font-size: 14px
+        padding: 9px 30px
+  .nav
+    &-link
+      font-size: 14px
+  .main
+    &-block
+      flex-direction: column
+      align-items: center
+  .title
+    font-size: 43px
+
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 90%
+  .navbar
+    &-mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      bottom: 0
+      right: 0
+      top: 78px
+      font-family: $roboto-condensed
+      overflow: auto
+      &--visible
+        display: block
+        background-color: #183B56
+      &__button
+        max-width: 163px
+        margin-top: 30px
+        padding: 11px 31px 11px 31px
+        border: 2px solid #FAAD13
+        color: $white
+        border-radius: 4px
+        background: #FAAD13
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        text-transform: uppercase
+      &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 50px
+    &-left
+      display: none
+      &__menu
+        &-button
+          display: flex
+    &-menu
+      padding-left: 0
+      &__item
+        margin-top: 30px
+        list-style-type: none
+        text-align: center
+      &__link
+        text-decoration: none
+        color: $white
+        font-weight: bold
+        font-size: 32px
+        line-height: 40px
+  .menu
+    &-button
+      display: flex
+      width: 24px
+      height: 18px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      padding: 0
+      border: none
+      background-color: $white
+      &__line
+        width: 22px
+        height: 2px
+        background-color: #3A4C66
+  .main
+    margin-top: 54px
+    &-text
+      padding: 46px 15px 30px 15px
+      text-align: center
+    &-author
+      ont-size: 18px
+    &-buttons
+      display: flex
+      flex-direction: column
+      max-width: 240px
+      margin: auto
+  .button
+    &-outline
+      margin-right: 0
+      margin-bottom: 14px
+  .title
+    font-size: 38px
+
+@media (max-width: 576px)
+  .container
+    width: 85%
+
+@media (max-width: 480px)
+  .title
+    font-size: 32px
+    line-height: 40px
+    &-rest
+      margin-bottom: 23px
+  .main
+    &-text
+      padding-bottom: 32px
+    &-author
+      font-size: 16px
+      line-height: 24px
+    &-description
+      margin-bottom: 19px
+      font-size: 16px
+      line-height: 23px
+    &-buttons
+      max-width: 200px
+    &-book
+      width: 280px
+      height: 332.79px
+  .button
+    &-outline
+      margin-bottom: 14px
+      padding: 9px 20px
+      font-size: 16px
+      line-height: 22px
+    &-primary
+      padding: 9px 29px
+      font-size: 16px
+      line-height: 22px
+
+@media (max-width: 380px)
+  .container
+    width: 87%
+  .navbar
+    &-top
+      padding-top: 18px
+  .main
+    &-buttons
+      max-width: 182px
