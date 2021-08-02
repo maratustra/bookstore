@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центральный книжный</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar navbar-mobile navbar-mobile--fixed">
+    <div class="container">
+      <div class="navbar-top">
+        <a href="index.html" class="logo">
+          <img src="img/header/Logo.png" alt="Logo: Ehya" class="logo__image">
+        </a>
+
+        <div class="navbar-left navbar-left--mobile--hidden">
+          <nav class="nav">
+            <a href="#" class="nav-link nav-link-one">Рекомендации</a>
+            <a href="#" class="nav-link nav-link-two">Книги</a>
+            <a href="#" class="nav-link nav-link-three">Блог</a>
+          </nav>
+          <button class="navbar-top__button">Получить</button>
+        </div>
+        <!-- /.navbar-left -->
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+      <!-- /.navbar-top -->
+    </div>
+    <!-- /.container -->
+    <div class="navbar-bottom">
+      <div class="container navbar-bottom__container">
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+        </ul>
+        <button class="navbar-bottom__button">Получить</button>
+        <!-- /.navbar-menu -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-bottom -->
+  </header>
+
+  <section class="main">
+    <div class="main-container">
+      <div class="main-text">
+        <h1 class="main-title">Design Theory:</h1>
+        <h1 class="main-subtitle">The Psychology of Graphic Design Pricing</h1>
+        <span class="main-author">Книга Мишеля Янга</span>
+        <p class="main-description">Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных
+          клиентов. Теперь я делюсь своими золотыми стратегиями ценообразования на творческую работу.</p>
+        <div class="main-buttons">
+          <a href="https://www.amazon.com/Psychology-Graphic-Design-Pricing-confidence/dp/1794390146"
+            class="button button-outline">Купить сейчас</a>
+          <button class="button button-primary">Читать демо</button>
+        </div>
+        <!-- main-buttons -->
+      </div>
+      <!-- main-text -->
+      <div class="main-image">
+        <img class="main-book" src="img/book.png" alt="Книга Design Theory: The Psychology of Graphic Design Pricing" />
+      </div>
+      <!-- /.image-block -->
+    </div>
+    <!-- /.main-container -->
+  </section>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
