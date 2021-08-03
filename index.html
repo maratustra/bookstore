@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <!-- Шапка -->
   <header class="navbar navbar-mobile navbar-mobile--fixed">
     <div class="container">
       <div class="navbar-top">
@@ -36,6 +37,9 @@
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
         </button>
+        <a href="#" class="navbar-top__close">
+          <img src="img/close.svg" alt="Кнопка: закрыть">
+        </a>
       </div>
       <!-- /.navbar-top -->
     </div>
@@ -54,7 +58,7 @@
     </div>
     <!-- /.navbar-bottom -->
   </header>
-
+  <!-- Главная секция -->
   <section class="main">
     <div class="container">
       <div class="main-block">
@@ -71,7 +75,7 @@
             работу.
           </p>
           <div class="main-buttons">
-            <a href="https://www.amazon.com/Psychology-Graphic-Design-Pricing-confidence/dp/1794390146"
+            <a href="https://www.amazon.com/Psychology-Graphic-Design-Pricing-confidence/dp/1794390146" target="_blank"
               class="button button-outline">Купить сейчас</a>
             <button class="button button-primary">Читать демо</button>
           </div>
@@ -87,6 +91,72 @@
       <!-- main-block -->
     </div>
     <!-- container -->
+  </section>
+  <!-- Раздел рекомендации -->
+  <section class="recommendations">
+    <div class="container">
+      <div class="recommended">
+        <h4 class="recommended-title">Рекомендации</h4>
+        <div class="recommended-books">
+          <div class="recommended-card">
+            <div class="recommended-card__picture">
+              <img src="img/recommendations/books_1.png" alt="Книга: The World of Abstract Art"
+                class="recommended-card__image">
+            </div>
+            <!-- recommended-card__picture -->
+            <div class="recommended-card__text">
+              <span class="recommended-card__heading">The World of Abstract Art</span>
+              <span class="recommended-card__category">Art & Design</span>
+              <span class="recommended-card__price">$25.00</span>
+              <div class="recommended-card__buy">
+                <button class="recommended-card__button">Купить</button>
+                <div class="recommended-card__like">
+                  <img class="heart-icon" src="img/" alt="Кнопка: лайк"><a href="#" class="favorites"></a>
+                </div>
+                <!-- recommended-card__like -->
+              </div>
+              <!-- /.recommended-card__buy -->
+            </div>
+            <!-- recommended-card__text -->
+          </div>
+          <!-- /.recommended-card -->
+        </div>
+        <!-- /.recommended-books -->
+        <div class="recommended-more">
+          <button class="recommended-more__button">Больше рекомендаций</button>
+        </div>
+        <!-- /.recommended-books__button -->
+      </div>
+      <!-- /.recommended -->
+      <div class="best">
+        <h4 class="best-title">Топ Месяца</h4>
+        <div class="best-books">
+          <div class="best-card">
+            <div class="best-card__picture">
+              <img src="img/" alt="Книга: Sprint : Solve, Test in 5 Days" class="best-card__image">
+            </div>
+            <!-- best-card__picture -->
+            <div class="best-card__text">
+              <span class="best-card__heading">Sprint : Solve, Test in 5 Days</span>
+              <span class="best-card__price">$23.00</span>
+              <div class="best-card__buy">
+                <button class="best-card__button">Купить</button>
+              </div>
+              <!-- /best-card__buy -->
+            </div>
+            <!-- best-card__text -->
+          </div>
+          <!-- best-card -->
+          <div class="best-books__more">
+            <button class="best-books__button">Лучшие книги</button>
+          </div>
+          <!-- /.recommended-books__button -->
+        </div>
+        <!-- best-books -->
+      </div>
+      <!-- /.recommended -->
+    </div>
+    <!-- /.container -->
   </section>
 
   <script src="js/jquery-3.6.0.min.js"></script>

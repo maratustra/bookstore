@@ -21,11 +21,20 @@
     font-size: 18px
     line-height: 32px
     color: #5A7184
-  &-book
+  &-image
+    display: flex
+    justify-content: center
+    align-items: center
     width: 488px
     height: 580px
+    background-color: #B3BAC5
+    background: rgba(0, 0, 0, 0.1)
+  &-book
+    position: absolute
+    width: 250px
+    height: 374px
     object-fit: cover
-    background-size: cover
+
 .title
   margin: 0
   font-family: $roboto-condensed
@@ -45,7 +54,7 @@
   font-weight: bold
   text-transform: uppercase
   &-outline
-    margin-right: 22px
+    margin-right: 20px
     padding: 18px 37px 18px 36px
     background: $button-color
     font-size: 16px
@@ -54,7 +63,7 @@
     text-decoration: none
     cursor: pointer
   &-primary
-    padding: 17px 50px 16px 51px
+    padding: 17px 48px 16px 48px
     border: 2px solid $button-color
     font-size: 18px
     line-height: 25px

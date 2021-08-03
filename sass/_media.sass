@@ -79,6 +79,8 @@
       &--visible
         display: block
         background-color: #183B56
+        &--button
+          display: block
       &__button
         max-width: 163px
         margin-top: 30px
@@ -101,6 +103,9 @@
       &__menu
         &-button
           display: flex
+    &-top
+      &--hidden
+        opacity: 0
     &-menu
       padding-left: 0
       &__item
@@ -111,8 +116,8 @@
         text-decoration: none
         color: $white
         font-weight: bold
-        font-size: 32px
-        line-height: 40px
+        font-size: 25px
+        line-height: 35px
   .menu
     &-button
       display: flex
@@ -150,6 +155,9 @@
 @media (max-width: 576px)
   .container
     width: 85%
+  .main
+    &-image
+      width: 100%
 
 @media (max-width: 480px)
   .title
@@ -158,6 +166,7 @@
     &-rest
       margin-bottom: 23px
   .main
+    margin-top: 52px
     &-text
       padding-bottom: 32px
     &-author
@@ -169,12 +178,14 @@
       line-height: 23px
     &-buttons
       max-width: 200px
+    &-image
+      height: 380px
     &-book
-      width: 280px
-      height: 332.79px
+      width: 143.44px
+      height: 214.59px
   .button
     &-outline
-      margin-bottom: 14px
+      margin-bottom: 13px
       padding: 9px 20px
       font-size: 16px
       line-height: 22px
@@ -192,3 +203,5 @@
   .main
     &-buttons
       max-width: 182px
+    &-image
+      height: 332px
