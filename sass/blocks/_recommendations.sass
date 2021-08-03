@@ -1,3 +1,8 @@
+.recommendations
+  &-wrapper
+    display: flex
+    flex-direction: row
+    margin-bottom: 79px
 .recommended
   &-title
     margin-bottom: 30px
@@ -13,7 +18,8 @@
     flex-wrap: wrap
     width: 751px
     height: 850px
-    margin-bottom: 18px
+    margin-bottom: 45px
+    margin-right: 29px
   &-card
     position: relative
     display: flex
@@ -86,8 +92,8 @@
       height: 21px
       margin-top: 10px
   &-more
-    &__button
-      padding: 25px 283px 27px 287px
+    &__link
+      padding: 25px 283px 27px 283px
       background: rgba($button-color, 0.1)
       mix-blend-mode: normal
       border-radius: 8px
@@ -99,11 +105,82 @@
       letter-spacing: 0.2px
       color: $button-color
       text-transform: uppercase
+      text-decoration: none
 .best
   &-title
+    margin-bottom: 30px
     font-family: $roboto-condensed
     font-weight: bold
     font-size: 32px
     line-height: 40px
     letter-spacing: 0.2px
     color: $titles
+  &-books
+    position: relative
+    display: flex
+    flex-direction: column
+    max-width: 360px
+    height: 942px
+    background: rgba(#B3BAC5,0.1)
+    mix-blend-mode: normal
+    border-radius: 8px
+    &__more
+      margin-top: 16px
+      font-family: $roboto-condensed
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+    &__link
+      text-decoration: none
+      color: $button-color
+      text-transform: uppercase
+    &__hr
+      width: 312px
+      margin-top: 14px
+  &-card
+    display: flex
+    flex-direction: row
+    margin-top: 24px
+    margin-left: 24px
+    margin-bottom: 8px
+    &__picture
+      overflow: hidden
+    &__image
+      width: 119.33px
+      height: 177.5px
+      object-fit: cover
+      background-size: cover
+      border-radius: 8px
+    &__text
+      display: flex
+      flex-direction: column
+      width: 220px
+      padding-left: 27px
+      padding-top: 8px
+    &__heading
+      margin-bottom: 15px
+      font-family: $roboto
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $titles
+    &__price
+      margin-bottom: 20px
+      font-family: $roboto-condensed
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: $button-color
+    &__button
+      padding: 7px 20px 7px 18px
+      font-family: $open-sans
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      color: $white
+      background: $titles
+      border-radius: 2000px
