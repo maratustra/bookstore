@@ -16,3 +16,11 @@ $(document).ready(function () {
   });
 
 });
+
+let like = document.querySelector('favorites');
+like.addEventListener('click', () =>
+  like.classList.toggle('favorites-active'));
+
+let supLike = document.querySelector('heart-icon');
+supLike.addEventListener('click', () =>
+  supLike.classList.toggle('heart-icon-active'));
