@@ -1,26 +1,47 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-  let menuButton = $('.menu-button');
-  let closeButton = $('.navbar-top__close');
+  // Лайки в разделе Рекомендации
 
-  menuButton.on('click', function () {
-    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
-    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
-    $('.menu-button').toggleClass('navbar-top--hidden');
+  let like = document.getElementsByClassName("recommended-card__heart");
+  console.log(like);
+
+
+  [].forEach.call(like, function (elem) {
+    console.log(elem);
+    elem.addEventListener('click', function (e) {
+      console.log(e);
+      e.preventDefault();
+
+      if (!this.classList.contains('active'))
+        this.classList.add('active');
+      else
+        this.classList.remove('active');
+    })
   });
 
-  closeButton.on('click', function () {
-    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
-    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
-    $('.menu-button').toggleClass('navbar-top--hidden');
+  // Слайдер раздел Bookshelf
+
+  const bookshelfSwiper = new Swiper('.bookshelf-slider', {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider-button--next',
+      prevEl: '.slider-button--prev',
+    },
+
+    //effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 30,
+      slideShadows: false,
+    },
+
+    // Keyboard Control Parameters
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
   });
 
 });
-
-let like = document.querySelector('favorites');
-like.addEventListener('click', () =>
-  like.classList.toggle('favorites-active'));
-
-let supLike = document.querySelector('heart-icon');
-supLike.addEventListener('click', () =>
-  supLike.classList.toggle('heart-icon-active'));

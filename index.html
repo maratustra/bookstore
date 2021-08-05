@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -113,11 +114,8 @@
                 <span class="recommended-card__price">$25.00</span>
                 <div class="recommended-card__buy">
                   <button class="recommended-card__button">Купить</button>
-                  <div class="recommended-card__like">
-                    <a href="#" class="favorites"><img class="heart-icon" src="img/recommendations/heart.svg"
-                        alt="Кнопка: лайк"></a>
+                  <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
-                  <!-- recommended-card__like -->
                 </div>
                 <!-- /.recommended-card__buy -->
               </div>
@@ -136,11 +134,8 @@
                 <span class="recommended-card__price">$28.00</span>
                 <div class="recommended-card__buy">
                   <button class="recommended-card__button">Купить</button>
-                  <div class="recommended-card__like">
-                    <a href="#" class="favorites"><img class="heart-icon" src="img/recommendations/heart.svg"
-                        alt="Кнопка: лайк"></a>
+                  <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
-                  <!-- recommended-card__like -->
                 </div>
                 <!-- /.recommended-card__buy -->
               </div>
@@ -159,11 +154,8 @@
                 <span class="recommended-card__price">$19.50</span>
                 <div class="recommended-card__buy">
                   <button class="recommended-card__button">Купить</button>
-                  <div class="recommended-card__like">
-                    <a href="#" class="favorites"><img class="heart-icon" src="img/recommendations/heart.svg"
-                        alt="Кнопка: лайк"></a>
+                  <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
-                  <!-- recommended-card__like -->
                 </div>
                 <!-- /.recommended-card__buy -->
               </div>
@@ -182,11 +174,8 @@
                 <span class="recommended-card__price">$20.00</span>
                 <div class="recommended-card__buy">
                   <button class="recommended-card__button">Купить</button>
-                  <div class="recommended-card__like">
-                    <a href="#" class="favorites"><img class="heart-icon" src="img/recommendations/heart.svg"
-                        alt="Кнопка: лайк"></a>
+                  <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
-                  <!-- recommended-card__like -->
                 </div>
                 <!-- /.recommended-card__buy -->
               </div>
@@ -205,11 +194,8 @@
                 <span class="recommended-card__price">$23.00</span>
                 <div class="recommended-card__buy">
                   <button class="recommended-card__button">Купить</button>
-                  <div class="recommended-card__like">
-                    <a href="#" class="favorites"><img class="heart-icon" src="img/recommendations/heart.svg"
-                        alt="Кнопка: лайк"></a>
+                  <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
-                  <!-- recommended-card__like -->
                 </div>
                 <!-- /.recommended-card__buy -->
               </div>
@@ -228,11 +214,8 @@
                 <span class="recommended-card__price">$23.00</span>
                 <div class="recommended-card__buy">
                   <button class="recommended-card__button">Купить</button>
-                  <div class="recommended-card__like">
-                    <a href="#" class="favorites"><img class="heart-icon" src="img/recommendations/heart.svg"
-                        alt="Кнопка: лайк"></a>
+                  <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
-                  <!-- recommended-card__like -->
                 </div>
                 <!-- /.recommended-card__buy -->
               </div>
@@ -337,7 +320,81 @@
 
   <hr>
 
+  <section class="bookshelf">
+    <div class="container bookshelf-container">
+      <div class="swiper-container bookshelf-slider">
+        <div class="swiper-wrapper bookshelf-wrapper">
+          <div class="swiper-slide bookshelf-slide">
+            <div class="bookshelf-slider__card">
+              <img class="bookshelf-slider__image" src="img/bookshelf/chart.png" alt="Иконка: диаграмма">
+              <span class="bookshelf-slider__header">Бизнес & Финансы</span>
+              <span class="bookshelf-slider__subtitle">Книги про мир бизнеса</span>
+            </div>
+            <!-- /.bookshelf-slider__card -->
+            <div class="bookshelf-slider__card">
+              <img class="bookshelf-slider__image" src="img/bookshelf/diamond.png" alt="Иконка: бриллиант">
+              <span class="bookshelf-slider__header">Самомотиватия</span>
+              <span class="bookshelf-slider__subtitle">Книги о мотивации</span>
+            </div>
+            <!-- /.bookshelf-slider__card -->
+            <div class="bookshelf-slider__card">
+              <img class="bookshelf-slider__image" src="img/bookshelf/book.png" alt="Иконка: книга">
+              <span class="bookshelf-slider__header">Романы Теленовеллы</span>
+              <span class="bookshelf-slider__subtitle">Книги с крутыми историями</span>
+            </div>
+            <!-- /.bookshelf-slider__card -->
+            <div class="bookshelf-slider__card">
+              <img class="bookshelf-slider__image" src="img/bookshelf/group.png" alt="Иконка: квадрат">
+              <span class="bookshelf-slider__header">Навыки будущего</span>
+              <span class="bookshelf-slider__subtitle">Книги для самоподготовки</span>
+            </div>
+            <!-- /.bookshelf-slider__card -->
+          </div>
+          <!-- swiper-slide -->
+        </div>
+        <!-- swiper-wrapper -->
+        <button class="slider-button slider-button--prev"></button>
+        <button class="slider-button slider-button--next"></button>
+      </div>
+      <!-- /.bookshelf-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.bookshelf -->
+
+  <section class="unpublished">
+    <div class="container">
+      <h2 class="unpublished-title">Неизданные книги</h2>
+      <div class="unpublished-block">
+        <div class="unpublished-card">
+          <img src="img/unpublished/book_1.png" alt="Книга: Logo Modernism" class="unpublished-image">
+        </div>
+        <!-- /.unpublished-card -->
+        <div class="unpublished-card">
+          <img src="img/unpublished/book_2.png" alt="Книга: The Overdue Life of Amy Byler" class="unpublished-image">
+        </div>
+        <!-- /.unpublished-card -->
+        <div class="unpublished-card">
+          <img src="img/unpublished/book_3.png" alt="Книга: Making Short Films" class="unpublished-image">
+        </div>
+        <!-- /.unpublished-card -->
+        <div class="unpublished-card">
+          <img src="img/unpublished/book_4.png" alt="Книга: On Web Typogrsphy" class="unpublished-image">
+        </div>
+        <!-- /.unpublished-card -->
+        <div class="unpublished-card">
+          <img src="img/unpublished/book_5.png" alt="Книга: After The End" class="unpublished-image">
+        </div>
+        <!-- /.unpublished-card -->
+      </div>
+      <!-- /.unpublished-block -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.unpublished -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
