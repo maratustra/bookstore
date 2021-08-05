@@ -22,3 +22,25 @@
     background-size: cover
     background-position: center
     object-fit: cover
+  &-slider
+    position: relative
+    &__button
+      position: absolute
+      top: 10px
+      z-index: 99
+      width: 54px
+      height: 56px
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: center
+      border-radius: 50%
+      object-fit: cover
+      border: none
+      &--next
+        top: 27px
+        right: 0
+        background-image: url(../img/unpublished/button_next.svg)
+      &--prev
+        top: 27px
+        right: 78px
+        background-image: url(../img/unpublished/button_prev.svg)

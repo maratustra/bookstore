@@ -35,6 +35,24 @@
         grid-row: 3 / 3
         grid-column: 1 / -1
         align-self: start
+  .bookshelf
+    margin-bottom: 50px
+    &-slider
+      height: 378px
+      &__header
+        font-size: 18px
+      &__subtitle
+        font-size: 14px
+    &-slide
+      align-items: baseline
+  .slider
+    &-button
+      &--prev
+        top: 320px
+        left: 410px
+      &--next
+        top: 320px
+        right: 410px
 
 @media (min-width: 992px)
   .navbar
@@ -113,6 +131,28 @@
       align-items: center
   .title
     font-size: 43px
+  .bookshelf
+    height: 510px
+    &-slide
+      height: 506px
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-around
+      padding-left: 50px
+      padding-right: 24px
+    &-slider
+      height: 510px
+      &__card
+        &:nth-child(1)
+          margin-right: 20px
+        &:nth-child(2)
+          margin-right: 20px
+        &:nth-child(3)
+          margin-left: 20px
+        &:nth-child(4)
+          margin-right: 27px
+          margin-left: 20px
 
 @media (max-width: 767px)
   .container

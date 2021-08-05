@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Центральный книжный</title>
+  <title>Центральный книжный дом</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
@@ -27,7 +27,7 @@
         <div class="navbar-left navbar-left--mobile--hidden">
           <nav class="nav">
             <a href="#recommendations" class="nav-link nav-link-one">Рекомендации</a>
-            <a href="#" class="nav-link nav-link-two">Книги</a>
+            <a href="#books" class="nav-link nav-link-two">Книги</a>
             <a href="#" class="nav-link nav-link-three">Блог</a>
           </nav>
           <button class="navbar-top__button">Получить</button>
@@ -367,7 +367,7 @@
             <div class="bookshelf-slider__card">
               <img class="bookshelf-slider__image" src="img/bookshelf/book.png" alt="Иконка: книга">
               <span class="bookshelf-slider__header">Разоблачители</span>
-              <span class="bookshelf-slider__subtitle">Журналистские расследования прошлого века</span>
+              <span class="bookshelf-slider__subtitle">Журналистские расследования</span>
             </div>
             <!-- /.bookshelf-slider__card -->
             <div class="bookshelf-slider__card">
@@ -391,30 +391,67 @@
 
   <section class="unpublished">
     <div class="container">
-      <h2 class="unpublished-title">Неизданные книги</h2>
-      <div class="unpublished-block">
-        <div class="unpublished-card">
-          <img src="img/unpublished/book_1.png" alt="Книга: Logo Modernism" class="unpublished-image">
+      <div class="swiper-container unpublished-slider">
+        <h2 class="unpublished-title"><a id="books"></a>Неизданные книги</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide unpublished-block">
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_1.png" alt="Книга: Logo Modernism" class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_2.png" alt="Книга: The Overdue Life of Amy Byler"
+                class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_3.png" alt="Книга: Making Short Films" class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_4.png" alt="Книга: On Web Typogrsphy" class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_5.png" alt="Книга: After The End" class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+          </div>
+          <!-- swiper-slide -->
+          <div class="swiper-slide unpublished-block">
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_10.jpg" alt="Книга: The Premonition: A Pandemic Story"
+                class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_14.jpg"
+                alt="Книга: The Whiteness of Wealth: How the Tax System Impoverishes Black Americans--and How We Can Fix It"
+                class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_12.jpg" alt="Книга: What's Mine and Yours" class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_13.jpg"
+                alt="Книга: How to Change: The Science of Getting from Where You Are to Where You Want to Be"
+                class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+            <div class="unpublished-card">
+              <img src="img/unpublished/book_11.jpg" alt="Книга: The Soul of a Woman" class="unpublished-image">
+            </div>
+            <!-- /.unpublished-card -->
+          </div>
+          <!-- swiper-slide -->
         </div>
-        <!-- /.unpublished-card -->
-        <div class="unpublished-card">
-          <img src="img/unpublished/book_2.png" alt="Книга: The Overdue Life of Amy Byler" class="unpublished-image">
-        </div>
-        <!-- /.unpublished-card -->
-        <div class="unpublished-card">
-          <img src="img/unpublished/book_3.png" alt="Книга: Making Short Films" class="unpublished-image">
-        </div>
-        <!-- /.unpublished-card -->
-        <div class="unpublished-card">
-          <img src="img/unpublished/book_4.png" alt="Книга: On Web Typogrsphy" class="unpublished-image">
-        </div>
-        <!-- /.unpublished-card -->
-        <div class="unpublished-card">
-          <img src="img/unpublished/book_5.png" alt="Книга: After The End" class="unpublished-image">
-        </div>
-        <!-- /.unpublished-card -->
+        <!-- swiper-wrapper -->
+        <button class="unpublished-slider__button unpublished-slider__button--prev"></button>
+        <button class="unpublished-slider__button unpublished-slider__button--next"></button>
       </div>
-      <!-- /.unpublished-block -->
+      <!-- swiper-container -->
     </div>
     <!-- /.container -->
   </section>

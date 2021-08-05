@@ -22,16 +22,16 @@ document.addEventListener('DOMContentLoaded', function () {
   // Слайдер раздел Bookshelf
 
   const bookshelfSwiper = new Swiper('.bookshelf-slider', {
-    // Optional parameters
-    loop: true,
 
-    // Navigation arrows
+    loop: false,
+
+    // Кнопки слайдера
     navigation: {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
     },
 
-    //effect: 'coverflow',
+    // Эффект 'coverflow',
     coverflowEffect: {
       rotate: 30,
       slideShadows: false,
@@ -42,6 +42,48 @@ document.addEventListener('DOMContentLoaded', function () {
       enabled: true,
       onlyInViewport: false,
     },
+  });
+
+  // Слайдер раздел Unpublished
+
+  const unpublishedSwiper = new Swiper('.unpublished-slider', {
+
+    loop: false,
+
+    // Кнопки слайдера
+    navigation: {
+      nextEl: '.unpublished-slider__button--next',
+      prevEl: '.unpublished-slider__button--prev',
+    },
+
+    // Эффект 'coverflow',
+    coverflowEffect: {
+      rotate: 30,
+      slideShadows: false,
+    },
+
+    // Keyboard Control Parameters
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
+
+  // Мобильное меню
+
+  let menuButton = $('.menu-button');
+  let closeButton = $('.navbar-top__close');
+
+  menuButton.on('click', function () {
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
+    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
+    $('.menu-button').toggleClass('navbar-top--hidden');
+  });
+
+  closeButton.on('click', function () {
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
+    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
+    $('.menu-button').toggleClass('navbar-top--hidden');
   });
 
 });
