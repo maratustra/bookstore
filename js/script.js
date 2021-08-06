@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
+      disabledClass: 'swiper-button-disabled',
     },
 
     // Эффект 'coverflow',
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       slideShadows: false,
     },
 
-    // Keyboard Control Parameters
+    // Параметры кнопок слайдера
     keyboard: {
       enabled: true,
       onlyInViewport: false,
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.unpublished-slider__button--next',
       prevEl: '.unpublished-slider__button--prev',
+      disabledClass: 'unpublished-slider-disabled',
     },
 
     // Эффект 'coverflow',
@@ -62,28 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
       slideShadows: false,
     },
 
-    // Keyboard Control Parameters
+    // Параметры кнопок слайдера
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
   });
 
-  // Мобильное меню
-
-  let menuButton = $('.menu-button');
-  let closeButton = $('.navbar-top__close');
-
-  menuButton.on('click', function () {
-    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
-    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
-    $('.menu-button').toggleClass('navbar-top--hidden');
-  });
-
-  closeButton.on('click', function () {
-    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
-    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
-    $('.menu-button').toggleClass('navbar-top--hidden');
-  });
-
-});
+})

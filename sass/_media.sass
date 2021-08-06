@@ -53,6 +53,10 @@
       &--next
         top: 320px
         right: 410px
+  .unpublished
+    &-card
+      &__hidden
+        display: none
 
 @media (min-width: 992px)
   .navbar
@@ -161,6 +165,10 @@
       &--next
         top: 250px
         right: 10px
+  .unpublished
+    &-card
+      &__hidden2
+        display: none
 
 @media (max-width: 767px)
   .container
@@ -343,15 +351,39 @@
       &--next
         top: 550px
         right: 150px
+  .unpublished
+    &-card
+      &__hidden3
+        display: none
+    &-block
+      justify-content: space-evenly
 
 @media (max-width: 637px)
   .slider
     &-button
       &--next
         right: 140px
+  .unpublished
+    &-slider
+      height: 500px
+      &__button
+        &--prev
+          top: 430px
+          right: 55%
+        &--next
+          top: 430px
+          right: 35%
+    &-title
+      font-family: $roboto-condensed
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      margin-bottom: 40px
 
 @media (max-width: 576px)
   .container
+    width: 85%
+  hr
     width: 85%
   .main
     &-image
@@ -375,6 +407,20 @@
           margin-bottom: 10px
         &:nth-child(4)
           margin: 0
+  .unpublished
+    &-card
+      &__hidden3
+        display: none
+    &-block
+      justify-content: space-between
+
+@media (max-width: 510px)
+  .unpublished
+    &-card
+      &__hidden4
+        display: none
+    &-block
+      justify-content: center
 
 @media (max-width: 480px)
   .title
@@ -476,6 +522,8 @@
       height: 803px
       &__more
         padding-top: 10px
+      &__hr
+        width: 312px
     &-card
       width: 100%
       margin-left: 15px
@@ -516,7 +564,7 @@
       margin-bottom: 50px
   .bookshelf
     height: 514px
-    margin-bottom: -30px
+    margin-bottom: 1px
     &-container
       width: 92%
     &-slider
@@ -588,6 +636,18 @@
       &--next
         top: 430px
         right: 92px
+  .unpublished
+    padding-bottom: 30px
+    &-title
+      margin-top: 17px
+    &-slider
+      &__button
+        &--prev
+          right: 52%
+          top: 431px
+        &--next
+          top: 431px
+          right: 28%
 
 @media (max-width: 380px)
   .container
@@ -603,3 +663,5 @@
   .bookshelf
     &-container
       width: 92%
+  hr
+    width: 87%
