@@ -71,4 +71,85 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-})
+  // Мобильное меню
+
+  let menuButton = $('.menu-button');
+  let closeButton = $('.navbar-top__close');
+
+  menuButton.on('click', function () {
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
+    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
+    $('.menu-button').toggleClass('navbar-top--hidden');
+  });
+
+  closeButton.on('click', function () {
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
+    $('.navbar-top__close').toggleClass('navbar-bottom--visible--button');
+    $('.menu-button').toggleClass('navbar-top--hidden');
+  });
+
+  // Видео с Youtube
+
+  let player;
+  let player1;
+  let player2;
+  let player3;
+
+  $('.video-button').on('click', function onYouTubeIframeAPIReady() {
+
+    player = new YT.Player('player', {
+      height: '380',
+      width: '100%',
+      videoId: 'tm5_NxjUPe4',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+
+    player1 = new YT.Player('player1', {
+      height: '200',
+      width: '100%',
+      videoId: 'ZSabBy-pwsI',
+      events: {
+        'onReady': videoPlay1,
+      }
+    });
+
+    player2 = new YT.Player('player2', {
+      height: '200',
+      width: '100%',
+      videoId: 'bmocjC3484A',
+      events: {
+        'onReady': videoPlay2,
+      }
+    });
+
+    player3 = new YT.Player('player3', {
+      height: '200',
+      width: '100%',
+      videoId: 'F4wlXIx9koI',
+      events: {
+        'onReady': videoPlay3,
+      }
+    });
+
+  });
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
+  function videoPlay1(event) {
+    event.target.playVideo();
+  }
+
+  function videoPlay2(event) {
+    event.target.playVideo();
+  }
+
+  function videoPlay3(event) {
+    event.target.playVideo();
+  }
+
+});
+

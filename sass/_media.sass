@@ -169,6 +169,35 @@
     &-card
       &--hidden2
         display: none
+  .authors
+    &-wrapper
+      width: 700px
+    &-title
+      font-size: 36px
+      line-height: 48px
+    &-description
+      font-size: 14px
+  .main
+    &-videocard
+      width: 700px
+      margin-bottom: 0px
+      height: 300px
+      &__button
+        width: 70px
+        height: 70px
+        top: 100px
+        right: 320px
+      &__icon
+        width: 70px
+        height: 70px
+  .sample
+    &-videocard
+      &--hidden
+        display: none
+  .description
+    &-block
+      width: 300px
+      margin-right: 0
 
 @media (max-width: 767px)
   .container
@@ -357,6 +386,48 @@
         display: none
     &-block
       justify-content: space-evenly
+  .title
+    &-block
+      flex-direction: column
+      align-items: center
+  .authors
+    &-wrapper
+      width: 576px
+      padding-top: 80px
+      margin-bottom: 70px
+    &-title
+      margin-bottom: 20px
+  .main
+    &-videocard
+      width: 576px
+      height: 260px
+      &__button
+        width: 50px
+        height: 50px
+        top: 85px
+        right: 250px
+      &__icon
+        width: 50px
+        height: 50px
+  .sample
+    &-videocard
+      width: 260px
+      height: 200px
+      &__title
+        text-align: center
+        margin-bottom: 10px
+      &__play
+        width: 23px
+        height: 27px
+        left: 125px
+      &__text
+        flex-direction: column
+        align-items: center
+  .description
+    &-block
+      width: 100%
+      height: 90px
+      text-align: center
 
 @media (max-width: 637px)
   .slider
@@ -413,6 +484,33 @@
         display: none
     &-block
       justify-content: space-between
+  .authors
+    &-wrapper
+      width: 85%
+    &-title
+      font-size: 30px
+      line-height: 40px
+  .main
+    &-videocard
+      width: 100%
+      height: 240px
+      margin-bottom: 20px
+      &__button
+        right: 180px
+      &__image
+        width: 100%
+        height: 240px
+  .sample
+    &-videocard
+      width: 180px
+      height: 180px
+      &__header
+        font-size: 20px
+        line-height: 28px
+      &__subheader
+        font-size: 16px
+      &__play
+        left: 100px
 
 @media (max-width: 510px)
   .unpublished
@@ -588,7 +686,6 @@
           margin-bottom: 0
         &:nth-child(4)
           margin: 0
-
       &__image
         width: 36px
         height: 36px
@@ -648,6 +745,61 @@
         &--next
           top: 431px
           right: 28%
+  .authors
+    &-wrapper
+      padding-top: 45px
+      width: 300px
+      margin: auto
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 23px
+    &-description
+      font-size: 18px
+      line-height: 25px
+  .description
+    &-block
+      margin-bottom: 11px
+  .main
+    &-videocard
+      margin-bottom: 20px
+      width: 300px
+      height: 210px
+      &__image
+        height: 210px
+      &__button
+        width: 56px
+        height: 56px
+        top: 78px
+        right: 122px
+  .sample
+    &-videocard
+      width: 140px
+      &__image
+        width: 140px
+        height: 138px
+      &__play
+        width: 21px
+        height: 27px
+        top: 60px
+        left: 60px
+      &__text
+        margin-top: 11px
+      &__title
+        margin-bottom: 6px
+      &__header
+        margin-bottom: 7px
+        font-size: 16px
+        line-height: 20px
+      &__subheader
+        font-size: 12px
+        line-height: 20px
+      &__flag
+        width: 10px
+        height: 14px
+  .title
+    &-block
+      margin-bottom: 60px
 
 @media (max-width: 380px)
   .container
@@ -665,3 +817,8 @@
       width: 92%
   hr
     width: 87%
+  .authors
+    &-container
+      width: 94%
+    &-wrapper
+      width: 100%
