@@ -66,6 +66,15 @@
       width: 100%
   .invalid
     font-size: 13px
+  .subscribe
+    height: 112px
+    &__button
+      top: 55px
+      right: 5%
+      padding: 13px 70px
+      max-width: 100%
+    &__input
+      padding-bottom: 59px
 
 @media (min-width: 992px)
   .navbar
@@ -128,6 +137,16 @@
       &:hover
         color: $yellow
         filter: brightness(85%)
+  .subscribe
+    &__button
+      &:hover
+        color: $white
+        filter: brightness(85%)
+  .blog
+    &-card
+      &__button
+        &:hover
+          color: $yellow
 
 @media (max-width: 992px)
   .container
@@ -236,6 +255,28 @@
       padding: 30px 60px
     &__button
       margin-bottom: 15px
+  .subscribe
+    &__button
+      padding: 13px 55px
+  .mailing
+    &-title
+      margin-right: 0
+    &-cover
+      height: 300px
+    &-wrapper
+      flex-direction: column
+    &-title
+      margin-top: 0
+  .subscribe
+    width: 400px
+    &__button
+      right: 5%
+      padding: 13px 126px
+  .blog
+    &-conteiners
+      flex-direction: column
+    &-maincard
+      margin-bottom: 30px
 
 @media (max-width: 767px)
   .container
@@ -480,6 +521,21 @@
       font-size: 13px
     &__message
       font-size: 13px
+  .mailing
+    background: #1565D8
+    height: 320px
+    &-cover
+      background: none
+    &-wrapper
+      flex-direction: column
+  .subscribe
+    width: 400px
+    &__button
+      right: 5%
+      padding: 13px 126px
+  .blog
+    &-mainbutton
+      right: 30px
 
 @media (max-width: 637px)
   .slider
@@ -584,6 +640,23 @@
       font-size: 11px
     &__message
       font-size: 11px
+  .mailing
+    &-title
+      font-size: 30px
+      margin-top: 0
+      margin-bottom: 40px
+  .subscribe
+    width: 300px
+    &__button
+      padding: 10px 80px
+      top: 60px
+  .blog
+    &-card
+      &__heading
+        font-size: 18px
+    &-maincard
+      &__text
+        text-align: justify
 
 @media (max-width: 510px)
   .unpublished
@@ -897,6 +970,65 @@
   .modal
     &__dialog
       width: 350px
+  .mailing
+    height: 307px
+    &-wrapper
+      height: 310px
+      margin-left: 3px
+      justify-content: center
+    &-cover
+      padding-left: 0
+      padding-top: 100px
+    &-title
+      font-family: $roboto-condensed
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      letter-spacing: 0.2px
+      color: $white
+      margin-top: 20px
+      margin-bottom: 30px
+  .subscribe
+    width: 272px
+    &__input
+      font-size: 16px
+      line-height: 22px
+    &__button
+      padding: 10px 70px
+  .blog
+    &-header
+      font-family: $roboto-condensed
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &-maincard
+      width: 100%
+      &__heading
+        font-size: 16px
+        line-height: 20px
+      &__text
+        font-size: 12px
+        line-height: 24px
+      &__top
+        height: 230px
+    &-cards
+      width: 100%
+    &-card
+      height: 120px
+      &__date
+        font-size: 10px
+        line-height: 20px
+      &__heading
+        font-size: 14px
+        line-height: 20px
+      &__button
+        font-size: 10px
+        line-height: 20px
+      &__text
+        padding-left: 15px
+    &-mainbutton
+      top: 900px
+      right: 20%
 
 @media (max-width: 380px)
   .container
@@ -930,3 +1062,44 @@
   .modal
     &__dialog
       width: 280px
+  .mailing
+    &-cover
+      padding-top: 74px
+      padding-left: 4px
+  .subscribу
+    &__input
+      padding-top: 5px
+  .blog
+    margin-bottom: 100px
+    &-header
+      margin-top: 54px
+      margin-left: 10px
+      margin-bottom: 48px
+    &-maincard
+      margin-right: 0
+      margin-bottom: 17px
+      &__top
+        height: 120px
+        margin-bottom: 20px
+      &__bottom
+        padding: 0
+    &-card
+      margin-bottom: 0
+      &__picture
+        width: 90px
+        height: 90px
+      &__image
+        height: 100%
+      &__text
+        width: 171px
+        padding-top: 0
+        padding-left: 23px
+      &__heading
+        width: 166px
+        margin-bottom: 5px
+      &__date
+        margin-bottom: 3px
+    &-mainbutton
+      top: 686px
+      &__button
+        padding: 12px 44px

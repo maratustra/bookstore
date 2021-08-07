@@ -28,7 +28,7 @@
           <nav class="nav">
             <a href="#recommendations" class="nav-link nav-link-one">Рекомендации</a>
             <a href="#books" class="nav-link nav-link-two">Книги</a>
-            <a href="#" class="nav-link nav-link-three">Блог</a>
+            <a href="#blog" class="nav-link nav-link-three">Блог</a>
           </nav>
           <button data-toggle="modal" data-href="#buying-modal" class="navbar-top__button">Получить</button>
         </div>
@@ -318,7 +318,7 @@
   </section>
 
   <hr>
-
+  <!-- Раздел Книжные категории -->
   <section class="bookshelf">
     <div class="container bookshelf-container">
       <div class="swiper-container bookshelf-slider">
@@ -390,7 +390,7 @@
     <!-- /.container -->
   </section>
   <!-- /.bookshelf -->
-
+  <!-- Раздел Неизданные книги -->
   <section class="unpublished">
     <div class="container">
       <div class="swiper-container unpublished-slider">
@@ -461,7 +461,7 @@
     <!-- /.container -->
   </section>
   <!-- /.unpublished -->
-
+  <!-- Раздел Истории авторов -->
   <section class="authors">
     <div class="container authors-container">
       <div class="authors-wrapper">
@@ -536,7 +536,7 @@
     <!-- /.container -->
   </section>
   <!-- /.authors -->
-
+  <!-- Раздел Издатели -->
   <section class="publishers">
     <div class="container">
       <div class="publishers-block">
@@ -569,7 +569,99 @@
     </div>
   </section>
   <!-- /.publishers -->
-
+  <!-- Раздел Блог -->
+  <section class="blog">
+    <div class="container blog-container">
+      <h1 class="blog-header"><a id="blog"></a>Ehya Блог</h1>
+      <div class="blog-mainbutton">
+        <button class="blog-mainbutton__button">Все блоги</button>
+      </div>
+      <!-- /.blog-title -->
+      <div class="blog-conteiners">
+        <div class="blog-maincard">
+          <div class="blog-maincard__top">
+            <img src="img/blog/pic1.jpg" alt="Картинка: обложка блога" class="blog-maincard__image">
+          </div>
+          <!-- blog-maincard__top -->
+          <div class="blog-maincard__bottom">
+            <span class="blog-maincard__heading">Success Steps For Your Business Life</span>
+            <div class="blog-maincard__paragraph">
+              <p class="blog-maincard__text">This is the author story section. Every week we try to give you
+                the&nbsp;story
+                of book writer. Tell all of
+                you the behind the scene of their books.</p>
+            </div>
+            <!-- blog-maincard__text -->
+          </div>
+          <!-- blog-maincard__bottom -->
+        </div>
+        <!-- blog-maincard -->
+        <div class="blog-cards">
+          <div class="blog-card">
+            <div class="blog-card__picture">
+              <img src="img/blog/pic2.jpg" alt="Картинка: обложка блога" class="blog-card__image">
+            </div>
+            <!-- blog-card__picture -->
+            <div class="blog-card__text">
+              <span class="blog-card__date">23 марта 2020</span>
+              <span class="blog-card__heading">29 Motivational Quotes for Work Environments</span>
+              <a href="#" class="blog-card__button">Читать</a>
+            </div>
+            <!-- blog-card__text -->
+          </div>
+          <!-- blog-card -->
+          <div class="blog-card">
+            <div class="blog-card__picture">
+              <img src="img/blog/pic3.jpg" alt="Картинка: обложка блога" class="blog-card__image">
+            </div>
+            <!-- blog-card__picture -->
+            <div class="blog-card__text">
+              <span class="blog-card__date">28 марта 2020</span>
+              <span class="blog-card__heading">Learn&nbsp;To&nbsp;Love&nbsp;Growth
+                and&nbsp;You&nbsp;Will&nbsp;Be&nbsp;A&nbsp;Success</span>
+              <a href="#" class="blog-card__button">Читать</a>
+            </div>
+            <!-- blog-card__text -->
+          </div>
+          <!-- blog-card -->
+          <div class="blog-card">
+            <div class="blog-card__picture">
+              <img src="img/blog/pic4.jpg" alt="Картинка: обложка блога" class="blog-card__image">
+            </div>
+            <!-- blog-card__picture -->
+            <div class="blog-card__text">
+              <span class="blog-card__date">28 марта 2020</span>
+              <span class="blog-card__heading">Motivation&nbsp;How&nbsp;To&nbsp;Build Trust at your Work</span>
+              <a href="#" class="blog-card__button">Читать</a>
+            </div>
+            <!-- blog-card__text -->
+          </div>
+        </div>
+        <!-- blog-cards -->
+      </div>
+      <!-- /.blog-conteiners -->
+    </div>
+    <!-- container -->
+  </section>
+  <!-- /.blog -->
+  <section class="mailing">
+    <div class="container">
+      <div class="mailing-cover">
+        <div class="mailing-wrapper">
+          <h2 class="mailing-title">Будь первым, кто&nbsp;узнает о&nbsp;наших&nbsp;акциях</h2>
+          <form action="send.php" method="POST" class="subscribe mailing__subscribe">
+            <div>
+              <input type="email" class="subscribe__input" placeholder="Ваш Emaill" name="mail">
+              <button class="subscribe__button">Регистрация</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+      </div>
+      <!-- /.mailing-cover -->
+    </div>
+  </section>
+  <!-- mailing -->
   <!-- Модальное окно -->
   <div class="modal" id="buying-modal">
     <div class="modal__overlay"></div>

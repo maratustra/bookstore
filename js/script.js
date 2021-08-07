@@ -219,11 +219,11 @@ document.addEventListener('DOMContentLoaded', function () {
       messages: {
         name: {
           required: "Укажите свое имя",
-          minlength: "Укажите не менее 2 букв"
+          minlength: "Укажите не менее 2 знаков"
         },
         email: {
           required: "Укажите адрес эл. почты",
-          email: "Укажите ваш адрес эл.почты в формате name@domain.com"
+          email: "Укажите ваш адрес эл.почты"
         },
         phone: {
           required: "Укажите ваш номер телефона",
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  $('.newsletter__subscribe').validate({
+  $('.mailing__subscribe').validate({
     rules: {
       mail: {
         required: true,
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
     messages: {
       mail: {
         required: "Укажите адрес эл. почты",
-        email: "Укажите ваш адрес эл.почты в формате name@domain.comm"
+        email: "Укажите ваш адрес эл.почты"
       },
     }
   });
