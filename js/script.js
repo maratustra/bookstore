@@ -137,19 +137,128 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function videoPlay(event) {
     event.target.playVideo();
-  }
+  };
 
   function videoPlay1(event) {
     event.target.playVideo();
-  }
+  };
 
   function videoPlay2(event) {
     event.target.playVideo();
-  }
+  };
 
   function videoPlay3(event) {
     event.target.playVideo();
+  };
+
+  // Модальное окно
+
+  let modalButton = $('[data-toggle="modal"]');
+  let closeModalButtonByClick = $('.modal__close');
+  let closeModalButtonByEsc = $('[data-toggle="modal"]');
+
+  modalButton.on('click', openModal);
+  closeModalButtonByClick.on('click', closeModalByMouse);
+  closeModalButtonByEsc.on('keydown', closeModalByEsc);
+
+  function openModal() {
+
+    let targetModal = $(this).attr('data-href');
+
+    $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
+    $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
+    $('body').addClass('modal-open');
   }
+
+  function closeModalByMouse(event) {
+
+    event.preventDefault();
+
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+    $('body').removeClass('modal-open');
+  }
+
+  function closeModalByEsc(event) {
+
+    if (event.key === 'Escape') {
+      event.preventDefault();
+
+      let modalOverlay = $('.modal__overlay');
+      let modalDialog = $('.modal__dialog');
+
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+      $('body').removeClass('modal-open');
+    }
+  }
+
+  // Валидация
+
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true,
+          minlength: 18,
+          maxlength: 18
+        }
+      },
+      messages: {
+        name: {
+          required: "Укажите свое имя",
+          minlength: "Укажите не менее 2 букв"
+        },
+        email: {
+          required: "Укажите адрес эл. почты",
+          email: "Укажите ваш адрес эл.почты в формате name@domain.com"
+        },
+        phone: {
+          required: "Укажите ваш номер телефона",
+          minlength: "Укажите не менее 11 цифр"
+        },
+      }
+    });
+  });
+
+  $('.newsletter__subscribe').validate({
+    rules: {
+      mail: {
+        required: true,
+        mail: true
+      },
+    },
+    messages: {
+      mail: {
+        required: "Укажите адрес эл. почты",
+        email: "Укажите ваш адрес эл.почты в формате name@domain.comm"
+      },
+    }
+  });
+
+
+  // Маска для телефона
+
+  $('.phone').mask('+0 (000) 000-00-00');
+
+  let maskBehavior = function (value) {
+    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : '+0 (000) 000-00-00';
+  };
+
+  $('.phone').mask(maskBehavior);
+
 
 });
 

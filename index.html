@@ -17,7 +17,7 @@
 
 <body>
   <!-- Шапка -->
-  <header class="navbar navbar-mobile navbar-mobile--fixed">
+  <header id="header" class="navbar navbar-mobile navbar-mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo">
@@ -30,7 +30,7 @@
             <a href="#books" class="nav-link nav-link-two">Книги</a>
             <a href="#" class="nav-link nav-link-three">Блог</a>
           </nav>
-          <button class="navbar-top__button">Получить</button>
+          <button data-toggle="modal" data-href="#buying-modal" class="navbar-top__button">Получить</button>
         </div>
         <!-- /.navbar-left -->
         <button class="menu-button navbar-top__menu-button">
@@ -52,7 +52,7 @@
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
         </ul>
-        <button class="navbar-bottom__button">Получить</button>
+        <button data-toggle="modal" data-href="#buying-modal" class="navbar-bottom__button">Получить</button>
         <!-- /.navbar-menu -->
       </div>
       <!-- /.container -->
@@ -76,8 +76,7 @@
             работу.
           </p>
           <div class="main-buttons">
-            <a href="https://www.amazon.com/Psychology-Graphic-Design-Pricing-confidence/dp/1794390146" target="_blank"
-              class="button button-outline">Купить сейчас</a>
+            <a href="#" data-toggle="modal" data-href="#buying-modal" class="button button-outline">Купить сейчас</a>
             <button class="button button-primary">Читать демо</button>
           </div>
           <!-- main-buttons -->
@@ -113,7 +112,7 @@
                 <span class="recommended-card__category">Art & Design</span>
                 <span class="recommended-card__price">$25.00</span>
                 <div class="recommended-card__buy">
-                  <button class="recommended-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="recommended-card__button">Купить</button>
                   <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
                 </div>
@@ -133,7 +132,7 @@
                 <span class="recommended-card__category">Education</span>
                 <span class="recommended-card__price">$28.00</span>
                 <div class="recommended-card__buy">
-                  <button class="recommended-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="recommended-card__button">Купить</button>
                   <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
                 </div>
@@ -153,7 +152,7 @@
                 <span class="recommended-card__category">Novel</span>
                 <span class="recommended-card__price">$19.50</span>
                 <div class="recommended-card__buy">
-                  <button class="recommended-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="recommended-card__button">Купить</button>
                   <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
                 </div>
@@ -173,7 +172,7 @@
                 <span class="recommended-card__category">Novel</span>
                 <span class="recommended-card__price">$20.00</span>
                 <div class="recommended-card__buy">
-                  <button class="recommended-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="recommended-card__button">Купить</button>
                   <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
                 </div>
@@ -193,7 +192,7 @@
                 <span class="recommended-card__category">Business</span>
                 <span class="recommended-card__price">$23.00</span>
                 <div class="recommended-card__buy">
-                  <button class="recommended-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="recommended-card__button">Купить</button>
                   <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
                 </div>
@@ -213,7 +212,7 @@
                 <span class="recommended-card__category">Motivation</span>
                 <span class="recommended-card__price">$23.00</span>
                 <div class="recommended-card__buy">
-                  <button class="recommended-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="recommended-card__button">Купить</button>
                   <div class="recommended-card__heart"><i class="recommended-card__icon icon fas fa-heart fa-3x"></i>
                   </div>
                 </div>
@@ -244,7 +243,7 @@
                 <span class="best-card__heading">Sprint : Solve, <br> Test in 5 Days</span>
                 <span class="best-card__price">$23.00</span>
                 <div class="best-card__buy">
-                  <button class="best-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="best-card__button">Купить</button>
                 </div>
                 <!-- /best-card__buy -->
               </div>
@@ -261,7 +260,7 @@
                 <span class="best-card__heading">Hacking Growth Break Problem</span>
                 <span class="best-card__price">$23.00</span>
                 <div class="best-card__buy">
-                  <button class="best-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="best-card__button">Купить</button>
                 </div>
                 <!-- /best-card__buy -->
               </div>
@@ -278,7 +277,7 @@
                 <span class="best-card__heading">Very Nice a Novel&nbsp;by Mercy</span>
                 <span class="best-card__price">$23.00</span>
                 <div class="best-card__buy">
-                  <button class="best-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="best-card__button">Купить</button>
                 </div>
                 <!-- /best-card__buy -->
               </div>
@@ -295,7 +294,7 @@
                 <span class="best-card__heading">Hooked : How to Build Products</span>
                 <span class="best-card__price">$23.00</span>
                 <div class="best-card__buy">
-                  <button class="best-card__button">Купить</button>
+                  <button data-toggle="modal" data-href="#buying-modal" class="best-card__button">Купить</button>
                 </div>
                 <!-- /best-card__buy -->
               </div>
@@ -538,9 +537,69 @@
   </section>
   <!-- /.authors -->
 
+  <section class="publishers">
+    <div class="container">
+      <div class="publishers-block">
+        <h4 class="publishers-title">Некоторые из издателей, с&nbsp;которыми мы сотрудничали</h4>
+        <div class="publishers-wrapper">
+          <div class="publishers-list">
+            <img class="publishers-logo publishers-logo--special" src="img/publishers/slack.png" alt="Логотип: Slack">
+            <img class="publishers-logo publishers-logo--special" src="img/publishers/netflix.png"
+              alt="Логотип: Netflix">
+            <img class="publishers-logo" src="img/publishers/fitbit.png" alt="Логотип: Fitbit">
+            <img class="publishers-logo" src="img/publishers/google.png" alt="Логотип: Google">
+            <img class="publishers-logo" src="img/publishers/airbnb.png" alt="Логотип: Airbnb">
+            <img class="publishers-logo" src="img/publishers/uber.png" alt="Логотип: Uber">
+          </div>
+          <!-- /.publishers-list -->
+          <div class="publishers-list publishers-list--hidden">
+            <img class="publishers-logo publishers-logo--special" src="img/publishers/netflix.png"
+              alt="Логотип: Netflix">
+            <img class="publishers-logo" src="img/publishers/airbnb.png" alt="Логотип: Airbnb">
+            <img class="publishers-logo publishers-logo--special" src="img/publishers/slack.png" alt="Логотип: Slack">
+            <img class="publishers-logo" src="img/publishers/uber.png" alt="Логотип: Uber">
+            <img class="publishers-logo" src="img/publishers/fitbit.png" alt="Логотип: Fitbit">
+            <img class="publishers-logo" src="img/publishers/google.png" alt="Логотип: Google">
+          </div>
+          <!-- /.publishers-list -->
+        </div>
+        <!-- /.publishers-wrapper -->
+      </div>
+      <!-- /.publishers-block -->
+    </div>
+  </section>
+  <!-- /.publishers -->
+
+  <!-- Модальное окно -->
+  <div class="modal" id="buying-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/modal/close.svg" alt="Иконка: закрыть окно">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Оформить покупку</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Имя*" name="name">
+        <input type="tel" class="input modal__input phone" placeholder="Телефон*" name="phone">
+        <input type="email" class="input modal__input" placeholder="Email*" name="email">
+        <textarea class="message modal__message" placeholder="Сообщение" name="message"></textarea>
+        <div class="modal__form-button">
+          <button class="button modal__button">Отправить</button>
+          <span class="modal__info">* Обязательное поле</span>
+        </div>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <!-- Кнопка вверх -->
+  <a href="#" class="arrowUp"><i class="fas fa-arrow-up"></i></a>
+
   <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
