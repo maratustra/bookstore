@@ -38,19 +38,22 @@ document.addEventListener('DOMContentLoaded', function () {
       // when window width is >= 992px
       992: {
         slidesPerView: 3,
-        spaceBetween: 24,
+        spaceBetween: 10,
       },
-      // when window width is >= 767px
+      // when window width is >= 637px
       637: {
         slidesPerView: 2,
         spaceBetween: 24,
       },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
       320: {
-        //slidesPerView: 2.1,
+        slidesPerView: 2,
         slidesPerColumn: 2,
         slidesPerColumnFill: 'column',
-        slidesPerGroup: 2,
-        spaceBetween: 10,
+        spaceBetween: 5,
       },
 
     },

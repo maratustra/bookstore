@@ -35,26 +35,12 @@
         grid-row: 3 / 3
         grid-column: 1 / -1
         align-self: start
-  .bookshelf
-    margin-bottom: 50px
-    &-slider
-      height: 378px
-      &__card
-        width: 216px
-      &__header
-        font-size: 18px
-      &__subtitle
-        font-size: 14px
-    &-slide
-      align-items: baseline
   .slider
     &-button
       &--prev
-        top: 320px
-        left: 410px
+        left: -30px
       &--next
-        top: 320px
-        right: 410px
+        right: 20px
   .unpublished
     &-card
       &--hidden
@@ -182,39 +168,13 @@
       align-items: center
   .title
     font-size: 43px
-  .bookshelf
-    height: 510px
-    margin-bottom: 0
-    &-container
-      max-width: 704px
-    &-slide
-      width: 100%
-      height: 350px
-      flex-direction: column
-      flex-wrap: wrap
-      align-items: center
-      justify-content: space-around
-      padding: 0
-    &-slider
-      height: 350px
-      &__card
-        &:nth-child(1)
-          margin-right: 20px
-        &:nth-child(2)
-          margin-right: 20px
-        &:nth-child(3)
-          margin-left: 20px
-        &:nth-child(4)
-          margin-right: 27px
-          margin-left: 20px
   .slider
     &-button
       &--prev
-        top: 250px
-        left: 10px
+        top: 260px
       &--next
-        top: 250px
-        right: 10px
+        top: 260px
+        right: 180px
   .unpublished
     &-card
       &--hidden2
@@ -461,37 +421,12 @@
       &__hr
         width: 312px
         margin-top: 14px
-  .bookshelf
-    height: 600px
-    margin-bottom: 20px
-    &-slider
-      height: 600px
-      &__card
-        width: 200px
-        &:nth-child(odd)
-          margin-bottom: 20px
-      &__image
-        width: 50px
-        height: 50px
-      &__header
-        font-size: 16px
-        line-height: 25px
-      &__subtitle
-        font-size: 12px
-        line-height: 20px
-    &-slide
-      height: 600px
-      justify-content: end
-      padding-left: 69px
-      padding-right: 50px
   .slider
     &-button
       &--prev
-        top: 550px
-        left: 150px
+        top: 260px
       &--next
-        top: 550px
-        right: 150px
+        top: 260px
   .unpublished
     &-card
       &--hidden3
@@ -585,10 +520,6 @@
         line-height: 28px
 
 @media (max-width: 637px)
-  .slider
-    &-button
-      &--next
-        right: 140px
   .unpublished
     &-slider
       height: 500px
@@ -618,24 +549,32 @@
     &-image
       width: 100%
   .bookshelf
-    &-slide
-      padding: 0
     &-slider
+      width: 489px
       &__card
-        &:nth-child(1)
-          margin-top: 0
-          margin-left: 0
-          margin-right: 0
-          margin-bottom: 10px
-        &:nth-child(2)
-          margin: 0
-        &:nth-child(3)
-          margin-top: 0
-          margin-left: 0
-          margin-right: 0
-          margin-bottom: 10px
-        &:nth-child(4)
-          margin: 0
+        width: 230px
+      &__image
+        width: 50px
+        height: 50px
+        margin-top: 40px
+        margin-bottom: 40px
+      &__header
+        margin-bottom: 12px
+        font-size: 20px
+        line-height: 29px
+      &__subtitle
+        font-size: 14px
+        line-height: 20px
+    &-wrapper
+      width: 489px
+    &-slide
+      width: 230px
+  .slider
+    &-button
+      &--next
+        top: 260px
+      &--prev
+        top: 260px
   .unpublished
     &-card
       &--hidden3
@@ -857,78 +796,51 @@
     &-wrapper
       margin-bottom: 50px
   .bookshelf
-    height: 514px
-    margin-bottom: 1px
     &-container
-      width: 92%
+      width: 100%
     &-slider
-      width: 290px
-      height: 480px
+      height: 400px
+      width: 302px
       &__card
         width: 140px
         height: 182px
-        margin-bottom: 10px
-        &:nth-child(1)
-          margin-right: 6px
-          margin-left: 0
-          margin-bottom: 10px
-        &:nth-child(2)
-          margin-left: 0
-          margin-right: 0
-          margin-bottom: 10px
-        &:nth-child(3)
-          margin-right: 6px
-          margin-left: 0
-          margin-bottom: 0
-        &:nth-child(4)
-          margin: 0
       &__image
         width: 36px
         height: 36px
         margin-bottom: 16px
-        margin-top: 20px
-        &--two
-          margin-left: 7px
-        &--four
-          margin-left: 7px
+        margin-top: 23px
       &__header
         font-family: $roboto-condensed
         font-size: 16px
         line-height: 20px
         margin-bottom: 10px
-        &--one
-          width: 65px
-        &--two
-          margin-left: 7px
-          margin-bottom: 30px
-        &--four
-          width: 67px
-          margin-left: 7px
+        width: 112px
       &__subtitle
         font-size: 12px
         line-height: 20px
-        width: 92px
-        &--two
-          margin-left: 7px
-        &--three
-          width: 99px
-        &--four
-          margin-left: 7px
+        max-width: 99px
+    &-wrapper
+      height: 100%
+      width: 100%
+      margin-left: 5px
     &-slide
-      width: 290px
-      height: 374px
-      flex-wrap: wrap
-      flex-direction: row
+      width: 140px
+      height: 182px
+      margin-bottom: 5px
+  .swiper
+    &-slide
+      width: 140px
+      height: 182px
   .slider
     &-button
       width: 48px
       height: 48px
-      &--prev
-        top: 430px
-        left: 93px
       &--next
-        top: 430px
-        right: 92px
+        top: 395px
+        right: 137px
+      &--prev
+        top: 395px
+        left: 128px
   .unpublished
     padding-bottom: 30px
     &-title
@@ -1132,22 +1044,48 @@
     &-container
       width: 100%
     &-slider
-      height: 380px
+      height: 400px
       width: 302px
+      &__card
+        width: 140px
+        height: 182px
+      &__image
+        width: 36px
+        height: 36px
+        margin-bottom: 16px
+        margin-top: 23px
+      &__header
+        font-family: $roboto-condensed
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 10px
+        width: 112px
+      &__subtitle
+        font-size: 12px
+        line-height: 20px
+        max-width: 99px
     &-wrapper
-      display: flex
-      // flex-wrap: wrap
-      flex-direction: row
-      height: 364px
+      height: 100%
       width: 100%
+      margin-left: 5px
     &-slide
       width: 140px
       height: 182px
-      margin-bottom: 10px
+      margin-bottom: 5px
   .swiper
     &-slide
       width: 140px
       height: 182px
+  .slider
+    &-button
+      width: 48px
+      height: 48px
+      &--next
+        top: 414px
+        right: 107px
+      &--prev
+        top: 414px
+        left: 108px
   hr
     width: 87%
   .authors
