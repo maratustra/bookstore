@@ -46,7 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 24,
       },
       320: {
-        slidesPerView: 2.1,
+        //slidesPerView: 2.1,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: 'column',
+        slidesPerGroup: 2,
         spaceBetween: 10,
       },
 
@@ -129,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
       width: '100%',
       videoId: 'tm5_NxjUPe4',
       events: {
-        'onReady': videoPlay,
+        // 'onReady': videoPlay,
       }
     });
 
@@ -138,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
       width: '100%',
       videoId: 'ZSabBy-pwsI',
       events: {
-        'onReady': videoPlay1,
+        // 'onReady': videoPlay1,
       }
     });
 
@@ -147,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
       width: '100%',
       videoId: 'bmocjC3484A',
       events: {
-        'onReady': videoPlay2,
+        // 'onReady': videoPlay2,
       }
     });
 
@@ -156,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
       width: '100%',
       videoId: 'F4wlXIx9koI',
       events: {
-        'onReady': videoPlay3,
+        // 'onReady': videoPlay3,
       }
     });
 
