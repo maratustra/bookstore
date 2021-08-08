@@ -82,7 +82,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const unpublishedSwiper = new Swiper('.unpublished-slider', {
 
+    // Default parameters
     loop: false,
+
+    slidesPerView: 5,
+    spaceBetween: 30,
+
+    breakpoints: {
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      // when window width is >= 637px
+      637: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      515: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
 
     // Кнопки слайдера
     navigation: {
