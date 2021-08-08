@@ -163,36 +163,33 @@ document.addEventListener('DOMContentLoaded', function () {
       height: '380',
       width: '100%',
       videoId: 'tm5_NxjUPe4',
-      events: {
-        // 'onReady': videoPlay,
-      }
     });
+  });
+
+  $('.video-button1').on('click', function onYouTubeIframeAPIReady() {
 
     player1 = new YT.Player('player1', {
       height: '200',
       width: '100%',
       videoId: 'ZSabBy-pwsI',
-      events: {
-        // 'onReady': videoPlay1,
-      }
     });
+  });
+
+  $('.video-button2').on('click', function onYouTubeIframeAPIReady() {
 
     player2 = new YT.Player('player2', {
       height: '200',
       width: '100%',
       videoId: 'bmocjC3484A',
-      events: {
-        // 'onReady': videoPlay2,
-      }
     });
+  });
+
+  $('.video-button3').on('click', function onYouTubeIframeAPIReady() {
 
     player3 = new YT.Player('player3', {
       height: '200',
       width: '100%',
       videoId: 'F4wlXIx9koI',
-      events: {
-        // 'onReady': videoPlay3,
-      }
     });
 
   });

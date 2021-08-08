@@ -59,6 +59,15 @@
       max-width: 100%
     &__input
       padding-bottom: 59px
+  .blog
+    &-card
+      &__heading
+        font-size: 16px
+      &__picture
+        width: 150px
+        height: 150px
+      &__text
+        padding-left: 10px
 
 @media (min-width: 992px)
   .navbar
@@ -140,6 +149,11 @@
           filter: brightness(85%)
   .footer
     &__link
+      &:hover
+        color: $yellow
+        filter: brightness(85%)
+  .wrong
+    &-button
       &:hover
         color: $yellow
         filter: brightness(85%)
@@ -525,6 +539,13 @@
       line-height: 36px
       text-align: center
       margin-bottom: 40px
+  .blog
+    &-card
+      &__heading
+        font-size: 18px
+    &-maincard
+      &__text
+        text-align: justify
 
 @media (max-width: 576px)
   .container
@@ -625,18 +646,45 @@
     &__button
       padding: 10px 80px
       top: 60px
-  .blog
-    &-card
-      &__heading
-        font-size: 18px
-    &-maincard
-      &__text
-        text-align: justify
 
 @media (max-width: 510px)
+  .blog
+    margin-bottom: 50px
+    &-container
+      height: 1150px
+    &-maincard
+      margin-bottom: 10px
+      &__top
+        margin-bottom: 0
+        height: 280px
+    &-card
+      height: 130px
+      margin-bottom: 0
+      &__picture
+        width: 180px
+        height: 150px
+      &__text
+        padding-top: 0
+      &__date
+        font-size: 10px
+        margin-bottom: 10px
+      &__heading
+        font-size: 15px
+        width: 171px
+        line-height: 25px
+        margin-bottom: 10px
+      &__button
+        font-size: 12px
+    &-mainbutton
+      top: 1050px
+      right: 120px
   .unpublished
     &-block
       justify-content: center
+  .mailing
+    &-title
+      margin-top: 20px
+      margin-bottom: 20px
 
 @media (max-width: 480px)
   .title
@@ -1017,25 +1065,44 @@
     &-container
       width: 100%
     &-top
-      padding-top: 18px
+      padding-top: 17px
+      padding-left: 17px
   .main
     &-buttons
       max-width: 182px
     &-image
       height: 332px
+  .menu
+    &-button
+      margin-left: 164px
+  .recommended
+    &-title
+      margin-top: 40px
+    &-card
+      &__price
+        margin-bottom: 22px
+  .best
+    &-card
+      &__price
+        margin-bottom: 15px
+    &-books
+      &__hr
+        width: 250px
   .bookshelf
+    margin-bottom: 114px
     &-container
       width: 100%
     &-slider
       height: 400px
       width: 302px
+      margin-top: 60px
       &__card
         width: 140px
         height: 182px
       &__image
         width: 36px
         height: 36px
-        margin-bottom: 16px
+        margin-bottom: 13px
         margin-top: 23px
       &__header
         font-family: $roboto-condensed
@@ -1064,13 +1131,18 @@
       width: 48px
       height: 48px
       &--next
-        top: 414px
+        top: 409px
         right: 107px
       &--prev
-        top: 414px
+        top: 409px
         left: 108px
   hr
     width: 87%
+  .unpublished
+    &-slider
+      &__button
+        width: 57px
+        height: 57px
   .authors
     &-container
       width: 94%
@@ -1095,7 +1167,10 @@
     &__input
       padding-top: 5px
   .blog
-    margin-bottom: 98px
+    margin-bottom: 42px
+    &-container
+      width: 89%
+      height: 830px
     &-containers
       margin-left: -1px
     &-header
@@ -1104,14 +1179,17 @@
       margin-bottom: 48px
     &-maincard
       margin-right: 0
-      margin-bottom: 19px
+      margin-bottom: 16px
       &__top
         height: 120px
-        margin-bottom: 20px
+        margin-bottom: 21px
       &__bottom
         padding: 0
       &__text
-        line-height: 23.5px
+        font-family: $open-sans
+        font-weight: normal
+        font-size: 12px
+        line-height: 24px
     &-card
       margin-bottom: 1px
       &__picture
@@ -1122,14 +1200,19 @@
       &__text
         width: 171px
         padding-top: 0
-        padding-left: 20px
+        padding-left: 21px
       &__heading
         width: 166px
         margin-bottom: 6px
       &__date
-        margin-bottom: 3px
+        margin-bottom: 4px
     &-mainbutton
-      top: 686px
+      top: 742px
+      right: 22%
       &__button
-        padding: 12px 50px
+        padding: 10px 48px
         font-size: 14px
+  .sample
+    &-videocard
+      &__header
+        width: 134px
