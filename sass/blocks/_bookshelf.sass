@@ -1,34 +1,36 @@
 .bookshelf
+  position: relative
   margin-bottom: 99px
   &-container
+    position: relative
     max-width: 1400px
   &-slide
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    width: 1250px
+    position: relative
+    width: 265px
+    border: 1px solid red
+  &-wrapper
+    border: 1px solid purple
+    position: relative
   &-slider
     position: relative
-    margin-top: 60px
-    max-width: 1250px
-    height: 240px
+    height: 245px
+    max-width: 1140px
+    margin-top: 55px
+    border: 1px solid blue
     &__card
+      position: relative
       display: flex
       flex-direction: column
       align-items: center
       width: 265px
       height: 240px
-      margin-right: 26px
-      border: 1px solid $border-color
+      border: 1px solid green
       border-radius: 8px
-      &:nth-child(4)
-        margin-right: 0
     &__image
       width: 64px
       height: 64px
       margin-top: 40px
-      margin-bottom: 39px
+      margin-bottom: 40px
     &__header
       margin-bottom: 12px
       font-family: $roboto
@@ -61,12 +63,8 @@
     border: none
     box-shadow: 0 1px 2px rgba(0,0,0,0.5)
     &--next
-      top: 50%
-      transform: translateY(-50%)
-      right: 27px
-      background-image: url(../img/bookshelf/button_next.svg)
+      top: 98px
+      right: 102px
     &--prev
-      top: 50%
-      transform: translateY(-50%)
-      left: 27px
-      background-image: url(../img/bookshelf/button_prev.svg)
+      top: 98px
+      left: 102px

@@ -23,7 +23,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const bookshelfSwiper = new Swiper('.bookshelf-slider', {
 
+    // Default parameters
     loop: false,
+
+    slidesPerView: 4,
+    spaceBetween: 26,
+
+    breakpoints: {
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 26,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      // when window width is >= 767px
+      637: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      320: {
+        slidesPerView: 2.1,
+        spaceBetween: 10,
+      },
+
+    },
 
     // Кнопки слайдера
     navigation: {
@@ -233,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  $('.mailing__subscribe').validate({
+  $('.newsletter__subscribe').validate({
     rules: {
       mail: {
         required: true,
