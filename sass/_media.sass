@@ -154,6 +154,11 @@
           color: $white
           box-shadow: inset 0 0 0 3px $button-color
           filter: brightness(85%)
+  .footer
+    &__link
+      &:hover
+        color: $yellow
+        filter: brightness(85%)
 
 @media (max-width: 992px)
   .container
@@ -284,6 +289,18 @@
       flex-direction: column
     &-maincard
       margin-bottom: 30px
+  .footer
+    &-grid
+      flex-direction: column
+      margin-bottom: 60px
+    &__main
+      order: 1
+      justify-content: center
+      align-items: center
+    &__slogan
+      text-align: center
+    &-copyright
+      margin-left: -60px
 
 @media (max-width: 767px)
   .container
@@ -543,6 +560,20 @@
   .blog
     &-mainbutton
       right: 30px
+  .footer
+    &__information
+      flex-wrap: wrap
+      justify-content: center
+    &__service,
+    &__product,
+    &__companies
+      margin-right: 0
+    &__list
+      margin-right: 90px
+    &-copyright
+      &__text
+        font-size: 15px
+        line-height: 28px
 
 @media (max-width: 637px)
   .slider
@@ -979,6 +1010,7 @@
       width: 350px
   .mailing
     height: 307px
+    margin-bottom: 48px
     &-wrapper
       height: 310px
       margin-left: 3px
@@ -1036,6 +1068,40 @@
     &-mainbutton
       top: 900px
       right: 20%
+  .footer
+    &-grid
+      margin-left: 3px
+    &__logo
+      width: 90px
+      height: 28px
+      margin-bottom: 14px
+    &__slogan
+      margin-left: -13px
+      margin-bottom: 13px
+      font-size: 15px
+      line-height: 28px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__main
+      margin-right: 0
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &__list
+      margin-right: 0
+      margin-bottom: 24px
+    &__information
+      justify-content: end
+      margin-bottom: 7px
+    &__companies
+      margin-right: 53px
+    &__product
+      margin-right: 41px
+    &-copyright
+      display: none
 
 @media (max-width: 380px)
   .container
@@ -1072,7 +1138,7 @@
   .mailing
     &-cover
       padding-top: 74px
-      padding-left: 4px
+      padding-left: 0
   .subscribу
     &__input
       padding-top: 5px
