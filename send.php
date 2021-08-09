@@ -12,21 +12,22 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-if ($email) {
-    $title = "Подписка на акции Ehya";
+
+if ($phone) {
+    $title = "Сообщение для Ehya";
+    $body = "
+    <h2>New Message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Email:</b> $email<br><br>
+    <b>Message:</b><br>$message
+    ";
+} else {
+    $title = "Подписка на Ehya";
     $body = "
     <b>Email:</b> $email
     ";
-} else {
-    $title = "Сообщение для Ehya";
-    $body = "
-    <h2>Новое сообщение</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
-    <b>Сообщение:</b><br>$message
-    ";
 }
-
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
