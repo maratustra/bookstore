@@ -445,8 +445,10 @@
       flex-direction: column
       align-items: center
   .authors
+    &-container
+      max-width: 556px
     &-wrapper
-      width: 576px
+      width: 100%
       padding-top: 80px
       margin-bottom: 70px
     &-title
@@ -583,6 +585,9 @@
       width: 489px
     &-slide
       width: 230px
+  .recommended
+    &-books
+      max-width: 556px
   .slider
     &-button
       &--next
@@ -593,8 +598,10 @@
     &-block
       justify-content: space-between
   .authors
+    &-container
+      max-width: 530px
     &-wrapper
-      width: 85%
+      width: 100%
     &-title
       font-size: 30px
       line-height: 40px
@@ -655,7 +662,12 @@
   .blog
     margin-bottom: 50px
     &-container
-      height: 1150px
+      height: 1050px
+    &-header
+      margin-top: 60px
+    &-mainbutton
+      top: 960px
+      right: 120px
     &-maincard
       margin-bottom: 10px
       &__top
@@ -679,9 +691,6 @@
         margin-bottom: 10px
       &__button
         font-size: 12px
-    &-mainbutton
-      top: 1050px
-      right: 120px
   .unpublished
     &-block
       justify-content: center
@@ -994,11 +1003,17 @@
     &__button
       padding: 10px 70px
   .blog
+    &-container
+      height: 900px
     &-header
       font-family: $roboto-condensed
       font-size: 28px
       line-height: 36px
       text-align: center
+      margin-top: 50px
+    &-mainbutton
+      top: 800px
+      right: 27%
     &-maincard
       width: 100%
       &__heading
@@ -1009,6 +1024,8 @@
         line-height: 24px
       &__top
         height: 230px
+      &__bottom
+        margin-top: 30px
     &-cards
       width: 100%
     &-card
@@ -1024,9 +1041,6 @@
         line-height: 20px
       &__text
         padding-left: 15px
-    &-mainbutton
-      top: 900px
-      right: 20%
   .footer
     &-grid
       margin-left: 3px
@@ -1167,18 +1181,21 @@
     &-cover
       padding-top: 74px
       padding-left: 0
-  .subscribу
+  .subscribe
     &__input
-      padding-top: 5px
+      padding-left: 47px
+    &__button
+      margin-top: -3px
+      padding: 10px 69px
   .blog
     margin-bottom: 42px
     &-container
       width: 89%
       height: 777px
-    &-containers
-      margin-left: -1px
+    &-conteiners
+      margin-left: 3px
     &-header
-      margin-top: 54px
+      margin-top: 57px
       margin-left: 3px
       margin-bottom: 48px
     &-maincard
@@ -1186,9 +1203,10 @@
       margin-bottom: 16px
       &__top
         height: 120px
-        margin-bottom: 21px
+        margin-bottom: 19px
       &__bottom
         padding: 0
+        margin-top: 0
       &__text
         font-family: $open-sans
         font-weight: normal
@@ -1212,7 +1230,7 @@
       &__date
         margin-bottom: 4px
     &-mainbutton
-      top: 690px
+      top: 688px
       right: 22%
       &__button
         padding: 10px 48px
@@ -1221,3 +1239,6 @@
     &-videocard
       &__header
         width: 134px
+  .footer
+    &-grid
+      margin-top: -3px
