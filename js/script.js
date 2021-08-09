@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.menu-button').toggleClass('navbar-top--hidden');
   });
 
+
   // Видео с Youtube
 
   let player;
@@ -221,10 +222,12 @@ document.addEventListener('DOMContentLoaded', function () {
   let modalButton = $('[data-toggle="modal"]');
   let closeModalButtonByClick = $('.modal__close');
   let closeModalButtonByEsc = $('[data-toggle="modal"]');
+  let closeModalOverlay = $('.modal__overlay');
 
   modalButton.on('click', openModal);
   closeModalButtonByClick.on('click', closeModalByMouse);
   closeModalButtonByEsc.on('keydown', closeModalByEsc);
+  closeModalOverlay.on('click', closeModalByMouse);
 
   function openModal() {
 

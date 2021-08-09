@@ -77,6 +77,11 @@
         height: 150px
       &__text
         padding-left: 10px
+  .mailing
+    margin-bottom: 50px
+  .footer
+    &__main
+      margin-right: 0
 
 @media (min-width: 992px)
   .navbar
@@ -289,16 +294,13 @@
     &__slogan
       text-align: center
     &-copyright
-      margin-left: -60px
+      margin-left: 0
 
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 90%
   .navbar
-    // &-container
-    //   max-width: 100%
-    //   width: 100%
     &-mobile
       &--fixed
         position: fixed
@@ -530,13 +532,13 @@
   .footer
     &__information
       flex-wrap: wrap
-      justify-content: center
     &__service,
     &__product,
-    &__companies
       margin-right: 0
     &__list
-      margin-right: 90px
+      margin-right: 60px
+    &__companies
+      margin-right: 70px
     &-copyright
       &__text
         font-size: 15px
@@ -717,6 +719,9 @@
     &-title
       margin-top: 20px
       margin-bottom: 20px
+  .footer
+    &__companies
+      margin-right: 70px
 
 @media (max-width: 480px)
   .title
@@ -1085,6 +1090,8 @@
     &__list
       margin-right: 0
       margin-bottom: 24px
+    &__service
+      margin-right: 30px
     &__information
       justify-content: end
       margin-bottom: 7px
