@@ -31,30 +31,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     breakpoints: {
       // when window width is >= 1200px
-      1200: {
+      1201: {
         slidesPerView: 4,
         spaceBetween: 26,
       },
       // when window width is >= 992px
       992: {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 5,
       },
       // when window width is >= 637px
       637: {
         slidesPerView: 2,
-        spaceBetween: 24,
+        spaceBetween: 15,
       },
       576: {
         slidesPerView: 2,
         spaceBetween: 5,
       },
-      321: {
-        slidesPerView: 1,
+      480: {
+        slidesPerView: 2,
         spaceBetween: 5,
-        centeredSlides: true,
-        centeredSlidesBounds: true
       },
+      321: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: 'column',
+        spaceBetween: 5,
+        // centeredSlides: true,
+        // centeredSlidesBounds: true
+      },
+      // 321: {
+      //   slidesPerView: 1,
+      //   spaceBetween: 5,
+      //   centeredSlides: true,
+      //   centeredSlidesBounds: true
+      // },
       320: {
         slidesPerView: 2,
         slidesPerColumn: 2,

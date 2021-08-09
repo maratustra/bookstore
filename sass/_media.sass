@@ -1,3 +1,12 @@
+@media (max-width: 1390px)
+  .slider
+    &-button
+      &--next
+        top: 15%
+        left: 65%
+      &--prev
+        top: 15%
+        left: 0px
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -35,12 +44,9 @@
         grid-row: 3 / 3
         grid-column: 1 / -1
         align-self: start
-  .slider
-    &-button
-      &--prev
-        left: 110px
-      &--next
-        right: 20px
+  .bookshelf
+    &-slider
+      margin-bottom: 30px
   .publishers
     &-block
       max-width: 960px
@@ -197,13 +203,10 @@
       align-items: center
   .title
     font-size: 43px
-  .slider
-    &-button
-      &--prev
-        top: 260px
-      &--next
-        top: 260px
-        right: 180px
+  .bookshelf
+    &-slider
+      &__card
+        margin: auto !important
   .authors
     &-wrapper
       width: 700px
@@ -282,7 +285,6 @@
     &-card
       &__text
         padding-left: 30px
-
   .footer
     &-grid
       flex-direction: column
@@ -345,7 +347,6 @@
         &-button
           display: flex
     &-top
-      // padding: 37px
       &--hidden
         opacity: 0
     &-menu
@@ -447,12 +448,12 @@
       &__hr
         width: 312px
         margin-top: 14px
-  .slider
-    &-button
-      &--prev
-        top: 260px
-      &--next
-        top: 260px
+  // .slider
+  //   &-button
+  //     &--prev
+  //       top: 260px
+  //     &--next
+  //       top: 260px
   .unpublished
     &-block
       justify-content: space-evenly
@@ -548,13 +549,13 @@
   .unpublished
     &-slider
       height: 500px
-      &__button
-        &--prev
-          top: 430px
-          right: 55%
-        &--next
-          top: 430px
-          right: 35%
+      // &__button
+      //   &--prev
+      //     top: 430px
+      //     right: 55%
+      //   &--next
+      //     top: 430px
+      //     right: 35%
     &-title
       font-family: $roboto-condensed
       font-size: 28px
@@ -568,6 +569,41 @@
     &-maincard
       &__text
         text-align: justify
+  .bookshelf
+    &-container
+      width: 100%
+    &-slider
+      height: 200px
+      width: 302px
+      &__card
+        width: 140px
+        height: 182px
+      &__image
+        width: 36px
+        height: 36px
+        margin-bottom: 16px
+        margin-top: 23px
+      &__header
+        font-family: $roboto-condensed
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 10px
+        width: 112px
+      &__subtitle
+        font-size: 12px
+        line-height: 20px
+        max-width: 99px
+    &-wrapper
+      height: 100%
+      width: 100%
+      margin-left: 5px
+    &-slide
+      width: 140px
+      height: 182px
+  .swiper
+    &-slide
+      width: 140px
+      height: 182px
 
 @media (max-width: 576px)
   .container
@@ -580,38 +616,16 @@
   .main
     &-image
       width: 100%
-  .bookshelf
-    &-slider
-      width: 100%
-      &__card
-        width: 230px
-        margin: auto !important
-      &__image
-        width: 50px
-        height: 50px
-        margin-top: 40px
-        margin-bottom: 40px
-      &__header
-        margin-bottom: 12px
-        font-size: 20px
-        line-height: 29px
-      &__subtitle
-        font-size: 14px
-        line-height: 20px
-    &-wrapper
-      width: 100% !important
-    &-slide
-      width: 230px
   .recommended
     width: 100%
     &-books
       max-width: 100%
-  .slider
-    &-button
-      &--next
-        top: 260px
-      &--prev
-        top: 260px
+  // .slider
+  //   &-button
+  //     &--next
+  //       top: 260px
+  //     &--prev
+  //       top: 260px
   .unpublished
     &-block
       justify-content: space-between
@@ -867,11 +881,12 @@
     &-container
       width: 100%
     &-slider
-      height: 400px
+      height: 200px
       width: 302px
       &__card
         width: 140px
         height: 182px
+        margin: auto !important
       &__image
         width: 36px
         height: 36px
@@ -903,12 +918,12 @@
     &-button
       width: 48px
       height: 48px
-      &--next
-        top: 395px
-        right: 137px
-      &--prev
-        top: 395px
-        left: 128px
+      // &--next
+      //   top: 395px
+      //   right: 137px
+      // &--prev
+      //   top: 395px
+      //   left: 128px
   .unpublished
     padding-bottom: 30px
     &-title
@@ -1132,7 +1147,7 @@
       &__hr
         width: 250px
   .bookshelf
-    margin-bottom: 114px
+    margin-bottom: 35px
     &-container
       width: 100%
     &-slider
@@ -1140,6 +1155,7 @@
       width: 302px
       margin-top: 60px
       margin-left: 4px
+      margin-bottom: 0
       &__card
         width: 140px
         height: 182px
@@ -1175,11 +1191,12 @@
       width: 48px
       height: 48px
       &--next
-        top: 409px
-        right: 107px
-      &--prev
-        top: 409px
-        left: 108px
+        left: 53%
+  .button
+    &--prev
+      margin-left: 27px
+    &--next
+      left: 85px
   hr
     width: 87%
   .unpublished
