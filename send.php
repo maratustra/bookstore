@@ -16,7 +16,7 @@ $email = $_POST['email'];
 if ($phone) {
     $title = "Сообщение для Ehya";
     $body = "
-    <h2>New Message</h2>
+    <h2>Новое сообщение</h2>
     <b>Name:</b> $name<br>
     <b>Phone:</b> $phone<br><br>
     <b>Email:</b> $email<br><br>

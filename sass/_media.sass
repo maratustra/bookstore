@@ -166,6 +166,11 @@
       &:hover
         color: $yellow
         filter: brightness(85%)
+  .greetings
+    &__button
+      &:hover
+        color: $yellow
+        filter: brightness(85%)
 
 @media (max-width: 992px)
   .container
@@ -291,9 +296,9 @@
     max-width: 576px
     width: 90%
   .navbar
-    &-container
-      max-width: 100%
-      width: 100%
+    // &-container
+    //   max-width: 100%
+    //   width: 100%
     &-mobile
       &--fixed
         position: fixed
@@ -338,7 +343,7 @@
         &-button
           display: flex
     &-top
-      padding: 37px
+      // padding: 37px
       &--hidden
         opacity: 0
     &-menu
@@ -569,15 +574,16 @@
     width: 85%
   .navbar
     &-container
-      width: 100%
+      width: 90%
   .main
     &-image
       width: 100%
   .bookshelf
     &-slider
-      width: 489px
+      width: 100%
       &__card
         width: 230px
+        margin: auto !important
       &__image
         width: 50px
         height: 50px
@@ -591,12 +597,13 @@
         font-size: 14px
         line-height: 20px
     &-wrapper
-      width: 489px
+      width: 100% !important
     &-slide
       width: 230px
   .recommended
+    width: 100%
     &-books
-      max-width: 556px
+      max-width: 100%
   .slider
     &-button
       &--next
@@ -666,6 +673,9 @@
     &__button
       padding: 10px 80px
       top: 60px
+  .blog
+    &-cards
+      width: 100%
 
 @media (max-width: 510px)
   .blog
@@ -752,7 +762,7 @@
       line-height: 36px
       text-align: center
     &-books
-      max-width: 376px
+      width: 100%
       margin-bottom: 25px
     &-card
       width: 280px
@@ -793,7 +803,7 @@
     &-more
       margin-bottom: 19px
       &__link
-        padding: 14px 61px
+        padding: 14px 60px
         font-size: 16px
         line-height: 20px
         text-transform: none
@@ -897,7 +907,7 @@
   .unpublished
     padding-bottom: 30px
     &-title
-      margin-top: 17px
+      margin-top: 19px
     &-slider
       &__button
         &--prev
@@ -1090,10 +1100,9 @@
     width: 87%
   .navbar
     &-container
-      width: 100%
+      width: 87%
     &-top
       padding-top: 17px
-      padding-left: 17px
   .main
     &-buttons
       max-width: 182px
@@ -1123,6 +1132,7 @@
       height: 400px
       width: 302px
       margin-top: 60px
+      margin-left: 4px
       &__card
         width: 140px
         height: 182px
@@ -1197,7 +1207,7 @@
       margin-top: -3px
       padding: 10px 69px
   .blog
-    margin-bottom: 42px
+    margin-bottom: 40px
     &-container
       width: 89%
       height: 777px
