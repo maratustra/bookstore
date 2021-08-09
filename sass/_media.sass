@@ -533,8 +533,9 @@
   .footer
     &__information
       flex-wrap: wrap
-    &__service,
-    &__product,
+    &__service
+      margin-right: 0
+    &__product
       margin-right: 0
     &__list
       margin-right: 60px
@@ -549,13 +550,13 @@
   .unpublished
     &-slider
       height: 500px
-      // &__button
-      //   &--prev
-      //     top: 430px
-      //     right: 55%
-      //   &--next
-      //     top: 430px
-      //     right: 35%
+      &__button
+        &--prev
+          top: 430px
+          right: 55%
+        &--next
+          top: 430px
+          right: 35%
     &-title
       font-family: $roboto-condensed
       font-size: 28px
