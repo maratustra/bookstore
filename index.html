@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -509,20 +512,20 @@
           <!-- /.subtitle-block -->
         </div>
         <!-- /.title-block -->
-        <div class="main-videocard" id="player">
+        <div class="main-videocard player" id="player">
           <script src="https://www.youtube.com/iframe_api"></script>
           <img src="img/authors/author_picture1.jpg" alt="Картинка: видео" class="main-videocard__image">
           <button class="main-videocard__button video-button"><img src="img/authors/play_button.svg"
-              alt="Иконка: проигрывание видео" class="main-videocard__icon"></button>
+              alt="Иконка: проигрывание видео" class="main-videocard__icon video-button0"></button>
         </div>
         <!-- /.authors-videocard -->
         <div class="sample-block">
           <div class="sample-videocard">
-            <div id="player1">
+            <div id="player1" class="player">
               <script src="https://www.youtube.com/iframe_api"></script>
               <img src="img/authors/author_picture2.jpg" alt="Картинка: видео" class="sample-videocard__image">
               <img src="img/authors/play.svg" alt="Иконка: проигрывание видео"
-                class="sample-videocard__play video-button1">
+                class="sample-videocard__play video-button video-button1">
             </div>
             <div class="sample-videocard__text">
               <div class="sample-videocard__title">
@@ -534,10 +537,10 @@
           </div>
           <!-- /.authors-videocard -->
           <div class="sample-videocard">
-            <div id="player2">
+            <div id="player2" class="player">
               <img src="img/authors/author_picture3.jpg" alt="Картинка: видео" class="sample-videocard__image">
               <img src="img/authors/play.svg" alt="Иконка: проигрывание видео"
-                class="sample-videocard__play video-button2">
+                class="sample-videocard__play video-button video-button2">
             </div>
             <div class="sample-videocard__text">
               <div class="sample-videocard__title">
@@ -549,10 +552,10 @@
           </div>
           <!-- /.authors-videocard -->
           <div class="sample-videocard sample-videocard--hidden">
-            <div id="player3">
+            <div id="player3" class="player">
               <img src="img/authors/author_picture4.jpg" alt="Картинка: видео" class="sample-videocard__image">
               <img src="img/authors/play.svg" alt="Иконка: проигрывание видео"
-                class="sample-videocard__play video-button3">
+                class="sample-videocard__play video-button video-button3">
             </div>
             <div class="sample-videocard__text">
               <div class="sample-videocard__title">
@@ -700,7 +703,9 @@
           <h2 class="mailing-title">Будь первым, кто&nbsp;узнает о&nbsp;наших&nbsp;акциях</h2>
           <form action="send.php" method="POST" class="subscribe mailing__subscribe">
             <div>
-              <input type="email" class="subscribe__input" placeholder="Ваш Emaill" name="mail">
+              <input type="email" class="subscribe__input email__input" placeholder="Ваш Emaill" name="mail"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Введите email в формате abc@mail.com"
+                required>
               <button class="subscribe__button">Регистрация</button>
             </div>
           </form>
@@ -790,14 +795,17 @@
   <div class="modal" id="buying-modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
-      <a href="#" class="modal__close">
+      <button class="modal__close">
         <img src="img/modal/close.svg" alt="Иконка: закрыть окно">
-      </a>
+      </button>
       <h3 class="modal__title modal__title--mb-3">Оформить покупку</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Имя*" name="name">
-        <input type="tel" class="input modal__input phone" placeholder="Телефон*" name="phone">
-        <input type="email" class="input modal__input" placeholder="Email*" name="email">
+        <input type="text" class="input modal__input" placeholder="Имя*" name="name" required>
+        <input type="tel" class="input modal__input phone" placeholder="Телефон*" name="phone" minlength="11"
+          maxlength="12" required>
+        <input type="email" class="input email__input modal__input" placeholder="Email*" name="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Введите email в формате abc@mail.com"
+          required>
         <textarea class="message modal__message" placeholder="Сообщение" name="message"></textarea>
         <div class="modal__form-button">
           <button class="button modal__button">Отправить</button>
@@ -810,13 +818,6 @@
 
   <!-- Кнопка вверх -->
   <a href="#" class="arrowUp"><i class="fas fa-arrow-up"></i></a>
-
-  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
